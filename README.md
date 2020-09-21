@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+rails api template with JWT
 
-Things you may want to cover:
+you must be authorized to perform any action,
+except POST api/v1/users/ and POST api/v1/login
 
-* Ruby version
+include header:
+"Authorization: Bearer <JWT-token>"
 
-* System dependencies
+to get JWT-token as json response,
+create new user or login
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Actions
+# show all users
+GET api/v1/users
+# show user with id = <id>
+GET api/v1/users/<id>
+# show user with id = <id>
+PUT api/v1/users/<id>
+# show user with id = <id>
+DELETE api/v1/users/<id>
+# create user
+POST api/v1/users/
