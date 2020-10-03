@@ -21,6 +21,7 @@ class ApplicationController < ActionController::API
 
   def logged_in?
     if token
+      puts token
       @user = User.find_by_id(token[0]['user_id'])
       return @user
     end

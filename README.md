@@ -9,7 +9,7 @@ include header:
 "Authorization: Bearer <JWT-token>"
 
 to get JWT-token as json response,
-create new user or login
+create new user or login, params: {email, password}
 
 Actions
 # show all users
