@@ -20,7 +20,7 @@ class Api::V1::UsersController < ApplicationController
     head 204
   end
 
-  # UPDATE USER
+  # UPDATE USER PUT api/v1/users/<id>
   def update
     user = User.find(params[:id])
     if user.update(user_params)
@@ -52,6 +52,7 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
+  #Method just to try JWT
   def auto_login
     render json: {"hola": "norman"} #@user
   end
